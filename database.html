@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Database - JHairAcc</title>
+<meta name="description" content="Browse and filter 30+ Japanese hair accessories. Compare kanzashi, clips, combs, headbands by material, occasion, and price.">
+<meta property="og:title" content="JHairAcc - Hair Accessory Database">
+<meta property="og:description" content="Browse and filter 30+ Japanese hair accessories by category, material, occasion, and price.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://humancronadmin.github.io/j-hair-acc/database.html">
+<link rel="canonical" href="https://humancronadmin.github.io/j-hair-acc/database.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="nav">
+  <a href="index.html" class="nav-brand">J<span>HairAcc</span></a>
+  <div class="nav-links">
+    <a href="database.html" class="active">Database</a>
+    <a href="index.html#guides">Guides</a>
+    <a href="index.html#about">About</a>
+  </div>
+</nav>
+<div class="db-header">
+  <h1>Hair Accessory Database</h1>
+  <p>Every accessory tells a story. Find yours.</p>
+</div>
+<div class="filters">
+  <input type="search" id="search" placeholder="Search name or brand...">
+  <select id="category"><option value="">All Categories</option></select>
+  <select id="material"><option value="">All Materials</option></select>
+  <select id="occasion"><option value="">All Occasions</option></select>
+  <select id="sort">
+    <option value="">Sort by...</option>
+    <option value="price-asc">Price: Low to High</option>
+    <option value="price-desc">Price: High to Low</option>
+    <option value="name-asc">Name: A to Z</option>
+  </select>
+</div>
+<div class="result-count" id="resultCount"></div>
+<div class="product-grid" id="grid"></div>
+<footer class="footer">
+  <p>JHairAcc is an open-source project. <a href="https://github.com/humancronadmin">GitHub</a></p>
+</footer>
+<script src="js/database.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6776399834647681" crossorigin="anonymous"></script>
+</body>
+</html>

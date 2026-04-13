@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://humancronadmin.github.io/j-hair-acc/sitemap.xml

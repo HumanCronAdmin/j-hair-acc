@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JHairAcc - Adorn Your Story</title>
+<meta name="description" content="A curated database of Japanese hair accessories for international buyers. Traditional kanzashi to modern clips, combs, and headbands.">
+<meta property="og:title" content="JHairAcc - Adorn Your Story">
+<meta property="og:description" content="A curated database of Japanese hair accessories. Traditional kanzashi to modern clips and combs.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://humancronadmin.github.io/j-hair-acc/">
+<link rel="canonical" href="https://humancronadmin.github.io/j-hair-acc/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="nav">
+  <a href="index.html" class="nav-brand">J<span>HairAcc</span></a>
+  <div class="nav-links">
+    <a href="database.html">Database</a>
+    <a href="#guides">Guides</a>
+    <a href="#about">About</a>
+  </div>
+</nav>
+<section class="hero">
+  <h1>Adorn Your <em>Story</em>.</h1>
+  <p>Japanese hair accessories for every occasion. From timeless kanzashi to modern acetate clips, find the perfect piece for your hair type and style.</p>
+  <a href="database.html" class="btn btn-primary">Browse the Database</a>
+</section>
+<section class="section">
+  <h2 class="section-title">The Problem</h2>
+  <div class="problem-grid" id="problems"></div>
+</section>
+<section class="section" style="background:var(--dark);color:#FFF;max-width:none;padding:48px 16px">
+  <div class="stats-row" id="stats"></div>
+</section>
+<section class="section" style="text-align:center">
+  <h2 class="section-title">Ready to Find Your Piece?</h2>
+  <p style="color:var(--muted);margin-bottom:24px;max-width:480px;margin-left:auto;margin-right:auto">Filter by category, material, occasion, and price. Every listing includes expert notes and hair type recommendations.</p>
+  <a href="database.html" class="btn btn-primary">Explore the Database</a>
+</section>
+<footer class="footer" id="about">
+  <p>JHairAcc is an open-source project. Every accessory tells a story. Find yours.</p>
+  <p style="margin-top:8px"><a href="https://github.com/humancronadmin">GitHub</a></p>
+</footer>
+<script>
+const problems=[
+  {icon:"🎋",title:"Hard to find outside Japan",desc:"Traditional kanzashi and quality Japanese hair accessories rarely appear in Western stores. Import options are scattered and unreliable."},
+  {icon:"⚠️",title:"Quality varies wildly",desc:"A $5 import clip and a $50 handcrafted kanzashi look the same in thumbnails. Material and craftsmanship details tell the real story."},
+  {icon:"💇",title:"No hair type matching",desc:"Thick hair, fine hair, short hair, updos. No existing guide helps match Japanese accessories to your specific hair type and occasion."}
+];
+const stats=[
+  {num:"30+",label:"Products"},
+  {num:"6",label:"Categories"},
+  {num:"Traditional to Modern",label:"Style Range"}
+];
+document.getElementById("problems").innerHTML=problems.map(p=>`<div class="problem-card"><div class="icon">${p.icon}</div><h3>${p.title}</h3><p>${p.desc}</p></div>`).join("");
+document.getElementById("stats").innerHTML=stats.map(s=>`<div class="stat"><div class="num">${s.num}</div><div class="label">${s.label}</div></div>`).join("");
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6776399834647681" crossorigin="anonymous"></script>
+</body>
+</html>
